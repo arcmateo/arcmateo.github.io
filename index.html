@@ -7,218 +7,219 @@
 
 <style>
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 html{
-    scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background:#f8f9fb;
-    color:#1e293b;
-    line-height:1.65;
+font-family:Arial, Helvetica, sans-serif;
+background:#f8f9fb;
+color:#1e293b;
+line-height:1.65;
 }
 
 .container{
-    max-width:1150px;
-    margin:auto;
-    padding:40px 25px;
+max-width:1150px;
+margin:auto;
+padding:40px 25px;
 }
 
 header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-bottom:70px;
-    position:sticky;
-    top:0;
-    background:#f8f9fb;
-    padding:20px 0;
-    z-index:100;
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:70px;
+position:sticky;
+top:0;
+background:#f8f9fb;
+padding:20px 0;
+z-index:100;
 }
 
 .logo{
-    font-size:22px;
-    font-weight:bold;
-    letter-spacing:1px;
+font-size:22px;
+font-weight:bold;
+letter-spacing:1px;
 }
 
 nav a{
-    margin-left:25px;
-    text-decoration:none;
-    color:#475569;
-    font-weight:500;
+margin-left:25px;
+text-decoration:none;
+color:#475569;
+font-weight:500;
 }
 
 nav a:hover{
-    color:#8a1538;
+color:#8a1538;
 }
 
 .hero{
-    display:grid;
-    grid-template-columns:1.3fr 0.7fr;
-    gap:60px;
-    align-items:center;
-    min-height:75vh;
+display:grid;
+grid-template-columns:1.3fr 0.7fr;
+gap:60px;
+align-items:center;
+min-height:75vh;
 }
 
 .small-title{
-    color:#8a1538;
-    font-weight:bold;
-    text-transform:uppercase;
-    letter-spacing:2px;
-    font-size:13px;
-    margin-bottom:15px;
+color:#8a1538;
+font-weight:bold;
+text-transform:uppercase;
+letter-spacing:2px;
+font-size:13px;
+margin-bottom:15px;
 }
 
 h1{
-    font-size:64px;
-    line-height:1.05;
-    margin-bottom:25px;
+font-size:64px;
+line-height:1.05;
+margin-bottom:25px;
 }
 
 .subtitle{
-    font-size:22px;
-    color:#475569;
-    margin-bottom:35px;
-    max-width:680px;
+font-size:22px;
+color:#475569;
+margin-bottom:35px;
+max-width:700px;
 }
 
 .buttons a{
-    display:inline-block;
-    padding:12px 20px;
-    margin-right:12px;
-    margin-bottom:10px;
-    border-radius:40px;
-    text-decoration:none;
-    font-weight:bold;
+display:inline-block;
+padding:12px 20px;
+margin-right:12px;
+margin-bottom:10px;
+border-radius:40px;
+text-decoration:none;
+font-weight:bold;
 }
 
 .btn-main{
-    background:#8a1538;
-    color:white;
+background:#8a1538;
+color:white;
 }
 
 .btn-main:hover{
-    background:#6d0f2c;
+background:#6d0f2c;
 }
 
 .btn-secondary{
-    border:1px solid #cbd5e1;
-    color:#111827;
-    background:white;
+border:1px solid #cbd5e1;
+color:#111827;
+background:white;
 }
 
 .btn-secondary:hover{
-    border-color:#8a1538;
-    color:#8a1538;
+border-color:#8a1538;
+color:#8a1538;
 }
 
 .photo-box{
-    background:white;
-    padding:18px;
-    border-radius:25px;
-    box-shadow:0 20px 50px rgba(0,0,0,0.08);
+background:white;
+padding:18px;
+border-radius:25px;
+box-shadow:0 20px 50px rgba(0,0,0,0.08);
 }
 
 .photo-box img{
-    width:100%;
-    border-radius:18px;
-    object-fit:cover;
+width:100%;
+border-radius:18px;
+object-fit:cover;
 }
 
 .caption{
-    text-align:center;
-    margin-top:12px;
-    color:#64748b;
-    font-size:14px;
+text-align:center;
+margin-top:12px;
+color:#64748b;
+font-size:14px;
 }
 
 .section{
-    margin-top:90px;
+margin-top:90px;
 }
 
 .section h2{
-    font-size:34px;
-    margin-bottom:25px;
-    color:#111827;
+font-size:34px;
+margin-bottom:25px;
 }
 
 .card{
-    background:white;
-    padding:28px;
-    border-radius:22px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.05);
-    margin-bottom:20px;
-}
-
-ul{
-    padding-left:20px;
-}
-
-li{
-    margin-bottom:8px;
+background:white;
+padding:28px;
+border-radius:22px;
+box-shadow:0 10px 30px rgba(0,0,0,0.05);
+margin-bottom:20px;
 }
 
 .pub{
-    margin-bottom:18px;
-    padding-bottom:18px;
-    border-bottom:1px solid #e2e8f0;
+padding-bottom:18px;
+margin-bottom:18px;
+border-bottom:1px solid #e2e8f0;
 }
 
 .pub:last-child{
-    border-bottom:none;
+border-bottom:none;
+margin-bottom:0;
+padding-bottom:0;
 }
 
 .two-col{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:25px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:25px;
 }
 
 footer{
-    margin-top:90px;
-    padding-top:25px;
-    border-top:1px solid #e2e8f0;
-    color:#64748b;
-    font-size:14px;
+margin-top:90px;
+padding-top:25px;
+border-top:1px solid #e2e8f0;
+color:#64748b;
+font-size:14px;
 }
 
 a{
-    color:#8a1538;
+color:#8a1538;
+}
+
+ul{
+padding-left:20px;
+}
+
+li{
+margin-bottom:8px;
 }
 
 @media(max-width:900px){
 
 header{
-    flex-direction:column;
-    align-items:flex-start;
-    gap:15px;
+flex-direction:column;
+align-items:flex-start;
+gap:15px;
 }
 
 nav a{
-    margin-left:0;
-    margin-right:18px;
+margin-left:0;
+margin-right:18px;
 }
 
 .hero{
-    grid-template-columns:1fr;
+grid-template-columns:1fr;
 }
 
 .two-col{
-    grid-template-columns:1fr;
+grid-template-columns:1fr;
 }
 
 h1{
-    font-size:46px;
+font-size:46px;
 }
 
 .subtitle{
-    font-size:20px;
+font-size:20px;
 }
 }
 </style>
@@ -233,7 +234,6 @@ h1{
 
 <nav>
 <a href="#about">About</a>
-<a href="#research">Research</a>
 <a href="#publications">Publications</a>
 <a href="#cv">CV</a>
 <a href="#contact">Contact</a>
@@ -243,6 +243,7 @@ h1{
 <section class="hero" id="about">
 
 <div>
+
 <div class="small-title">PhD Researcher · Process Systems Engineering</div>
 
 <h1>Mateo Arcila Osorio</h1>
@@ -253,9 +254,10 @@ I work on the modeling and simulation of dynamical systems, applied mathematics,
 
 <div class="buttons">
 <a href="#cv" class="btn-main">View CV</a>
-<a href="#research" class="btn-secondary">Research</a>
+<a href="#publications" class="btn-secondary">Publications</a>
 <a href="mailto:mateo.arcila@upc.edu" class="btn-secondary">Email</a>
 </div>
+
 </div>
 
 <div class="photo-box">
@@ -266,51 +268,65 @@ I work on the modeling and simulation of dynamical systems, applied mathematics,
 </section>
 
 
-<section class="section" id="research">
-<h2>Research</h2>
-
-<div class="card">
-<p>
-Doctoral candidate at :contentReference[oaicite:0]{index=0} working on nonlinear systems modeling, optimization, predictive control, and machine learning for sustainable energy systems.
-</p>
-
-<br>
-
-<p>
-Current applications include catalytic membrane reactors, ethanol and methanol steam reforming, hydrogen production systems, and scalable real-time control algorithms.
-</p>
-</div>
-</section>
-
-
 <section class="section" id="publications">
-<h2>Selected Publications</h2>
+<h2>Publications</h2>
 
 <div class="card">
 
 <div class="pub">
-<b>A phenomenological-based dynamic model of ethanol steam reforming for hydrogen production</b><br>
-International Journal of Hydrogen Energy (2026)
+<b>Mateo Arcila-Osorio</b>, Carlos Ocampo-Martinez, and Hernan Alvarez.<br>
+A detailed model deduction and parameter values for the Tennessee-Eastman benchmark.<br>
+<i>Brazilian Journal of Chemical Engineering</i>, 2026.<br>
+<a href="https://link.springer.com/article/10.1007/s43153-026-00646-8" target="_blank">doi:10.1007/s43153-026-00646-8</a>
 </div>
 
 <div class="pub">
-<b>A benchmark simulator for advanced control of ethanol steam reforming</b><br>
-Renewable Energy (2025)
+<b>Mateo Arcila-Osorio</b>, Carlos Ocampo-Martinez, and Hernan Alvarez.<br>
+A phenomenological-based dynamic model of ethanol steam reforming for hydrogen production.<br>
+<i>International Journal of Hydrogen Energy</i>, 2026.<br>
+<a href="https://doi.org/10.1016/j.ijhydene.2026.154199" target="_blank">doi:10.1016/j.ijhydene.2026.154199</a>
 </div>
 
 <div class="pub">
-<b>Nonlinear Dynamic Modeling and Control of Ethanol Steam Reforming for Hydrogen Production</b><br>
-IFAC-PapersOnLine (2025)
+<b>Mateo Arcila-Osorio</b>, Francesco Destro, Carlos Ocampo-Martinez, Jordi Llorca, and Richard D. Braatz.<br>
+A benchmark simulator for advanced control of ethanol steam reforming.<br>
+<i>Renewable Energy</i>, 2025.<br>
+<a href="https://doi.org/10.1016/j.renene.2025.124743" target="_blank">doi:10.1016/j.renene.2025.124743</a>
 </div>
 
 <div class="pub">
-<b>Optimization-based control of methanol steam reforming for hydrogen production in a catalytic membrane reactor</b><br>
-IFAC World Congress (2026)
+<b>Mateo Arcila-Osorio</b>, Francesco Destro, Carlos Ocampo-Martinez, Jordi Llorca, and Richard D. Braatz.<br>
+Nonlinear Dynamic Modeling and Control of Ethanol Steam Reforming for Hydrogen Production.<br>
+<i>IFAC-PapersOnLine</i>, 2025.<br>
+<a href="https://doi.org/10.1016/j.ifacol.2025.08.118" target="_blank">doi:10.1016/j.ifacol.2025.08.118</a>
 </div>
 
 <div class="pub">
-<b>Physics-informed Koopman-based Model Reduction for Real-time Optimization-based Control of Ethanol Steam Reforming</b><br>
-CDC 2026 (Under Review)
+<b>Mateo Arcila-Osorio</b>, Hernan Alvarez, and Carlos Ocampo-Martinez.<br>
+A Model for Gas Humidification in a Fuel-Cell Assembly.<br>
+<i>Control Systems Benchmarks. Springer</i>, 2025.<br>
+<a href="https://doi.org/10.1007/978-3-031-76312-0_5" target="_blank">doi:10.1007/978-3-031-76312-0_5</a>
+</div>
+
+<div class="pub">
+<b>Mateo Arcila-Osorio</b>, Hernan Alvarez, and Carlos Ocampo-Martinez.<br>
+A Benchmark of an Ethanol Steam Reformer for Clean Hydrogen Production.<br>
+<i>Control Systems Benchmarks. Springer</i>.<br>
+In press
+</div>
+
+<div class="pub">
+<b>Mateo Arcila-Osorio</b>, Carlos Ocampo-Martinez, and Jordi Llorca.<br>
+Optimization-based control of methanol steam reforming for hydrogen production in a catalytic membrane reactor.<br>
+<i>IFAC World Congress 2026</i>.<br>
+Accepted for publication
+</div>
+
+<div class="pub">
+<b>Mateo Arcila-Osorio</b>, Carlos Ocampo-Martinez, and Richard D. Braatz.<br>
+Physics-informed Koopman-based Model Reduction for Real-time Optimization-based Control of Ethanol Steam Reforming.<br>
+<i>Conference on Decision and Control (CDC) 2026</i>.<br>
+Under review
 </div>
 
 </div>
@@ -323,45 +339,41 @@ CDC 2026 (Under Review)
 <div class="two-col">
 
 <div class="card">
-<h3>Education</h3>
-<br>
-<p><b>Ph.D. in Automatic Control</b><br>
+<h3>Education</h3><br>
+<b>Ph.D. in Automatic Control</b><br>
 UPC BarcelonaTech<br>
-2024 – Present</p>
+2024 – Present
 
-<br>
+<br><br>
 
-<p><b>B.Sc. Chemical Engineering</b><br>
+<b>B.Sc. Chemical Engineering</b><br>
 Universidad Nacional de Colombia<br>
-2017 – 2023</p>
+2017 – 2023
 </div>
 
 <div class="card">
-<h3>Languages</h3>
-<br>
-<p>Spanish (Native)</p>
-<p>English (Full Professional Proficiency)</p>
-<p>Catalan (Intermediate)</p>
-<p>Italian (Beginner)</p>
+<h3>Languages</h3><br>
+Spanish (Native)<br>
+English (Full Professional Proficiency)<br>
+Catalan (Intermediate)<br>
+Italian (Beginner)
 </div>
 
 <div class="card">
-<h3>Research Projects</h3>
-<br>
+<h3>Research Projects</h3><br>
 <ul>
-<li>MARCH (IRI-CSIC, MIT, Pisa, TU Dortmund)</li>
+<li>MARCH</li>
 <li>ProGEMS</li>
 <li>SEAMLESS</li>
 </ul>
 </div>
 
 <div class="card">
-<h3>Professional Experience</h3>
-<br>
+<h3>Experience</h3><br>
 <ul>
 <li>Doctoral Researcher – UPC</li>
 <li>R&D Trainee – Colcafé</li>
-<li>Teaching Assistant – Process Control Lab</li>
+<li>Teaching Assistant</li>
 <li>Mathematics Tutor</li>
 </ul>
 </div>
@@ -374,10 +386,8 @@ Universidad Nacional de Colombia<br>
 <h2>Contact</h2>
 
 <div class="card">
-<p>Email: <a href="mailto:mateo.arcila@upc.edu">mateo.arcila@upc.edu</a></p>
-<p>Google Scholar: add your link</p>
-<p>ORCID: add your link</p>
-<p>Location: Barcelona, Spain</p>
+Email: <a href="mailto:mateo.arcila@upc.edu">mateo.arcila@upc.edu</a><br>
+Location: Barcelona, Spain
 </div>
 </section>
 
