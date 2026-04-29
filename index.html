@@ -1,10 +1,211 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Mi página</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mateo Arcila | Personal Website</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f8f9fb;
+    color:#1e293b;
+    line-height:1.6;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 25px;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:70px;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+nav a{
+    margin-left:25px;
+    text-decoration:none;
+    color:#475569;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#8a1538;
+}
+
+.hero{
+    display:grid;
+    grid-template-columns:1.3fr 0.7fr;
+    gap:60px;
+    align-items:center;
+    min-height:70vh;
+}
+
+.small-title{
+    color:#8a1538;
+    font-weight:bold;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:13px;
+    margin-bottom:15px;
+}
+
+h1{
+    font-size:64px;
+    line-height:1.05;
+    margin-bottom:25px;
+}
+
+.subtitle{
+    font-size:22px;
+    color:#475569;
+    margin-bottom:35px;
+    max-width:650px;
+}
+
+.buttons a{
+    display:inline-block;
+    padding:12px 20px;
+    margin-right:12px;
+    margin-bottom:10px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.btn-main{
+    background:#8a1538;
+    color:white;
+}
+
+.btn-main:hover{
+    background:#6d0f2c;
+}
+
+.btn-secondary{
+    border:1px solid #cbd5e1;
+    color:#111827;
+    background:white;
+}
+
+.btn-secondary:hover{
+    border-color:#8a1538;
+    color:#8a1538;
+}
+
+.photo-box{
+    background:white;
+    padding:18px;
+    border-radius:25px;
+    box-shadow:0 20px 50px rgba(0,0,0,0.08);
+}
+
+.photo-box img{
+    width:100%;
+    border-radius:18px;
+    object-fit:cover;
+}
+
+.caption{
+    text-align:center;
+    margin-top:12px;
+    color:#64748b;
+    font-size:14px;
+}
+
+footer{
+    margin-top:70px;
+    padding-top:25px;
+    border-top:1px solid #e2e8f0;
+    color:#64748b;
+    font-size:14px;
+}
+
+@media(max-width:850px){
+
+header{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:15px;
+}
+
+nav a{
+    margin-left:0;
+    margin-right:18px;
+}
+
+.hero{
+    grid-template-columns:1fr;
+}
+
+h1{
+    font-size:46px;
+}
+}
+</style>
 </head>
+
 <body>
-  <h1>Hola mundo</h1>
-  <p>Mi web en GitHub Pages.</p>
+
+<div class="container">
+
+<header>
+<div class="logo">MATEO ARCILA</div>
+
+<nav>
+<a href="#">About</a>
+<a href="#">Research</a>
+<a href="#">CV</a>
+<a href="#">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+
+<div>
+<div class="small-title">PhD Researcher · Process Systems Engineering</div>
+
+<h1>Mateo Arcila-Osorio</h1>
+
+<p class="subtitle">
+I work on model reduction, optimization, and predictive control for nonlinear physical systems, with applications in clean hydrogen production and catalytic membrane reactors.
+</p>
+
+<div class="buttons">
+<a href="#" class="btn-main">View CV</a>
+<a href="#" class="btn-secondary">Research</a>
+<a href="mailto:youremail@email.com" class="btn-secondary">Email</a>
+</div>
+</div>
+
+<div class="photo-box">
+<img src="profile.jpg" alt="Mateo Arcila">
+<div class="caption">Replace profile.jpg with your photo</div>
+</div>
+
+</section>
+
+<footer>
+© 2026 Mateo Arcila · Powered by GitHub Pages
+</footer>
+
+</div>
+
 </body>
 </html>
