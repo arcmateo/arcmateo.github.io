@@ -12,15 +12,19 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     background:#f8f9fb;
     color:#1e293b;
-    line-height:1.6;
+    line-height:1.65;
 }
 
 .container{
-    max-width:1100px;
+    max-width:1150px;
     margin:auto;
     padding:40px 25px;
 }
@@ -30,6 +34,11 @@ header{
     justify-content:space-between;
     align-items:center;
     margin-bottom:70px;
+    position:sticky;
+    top:0;
+    background:#f8f9fb;
+    padding:20px 0;
+    z-index:100;
 }
 
 .logo{
@@ -54,7 +63,7 @@ nav a:hover{
     grid-template-columns:1.3fr 0.7fr;
     gap:60px;
     align-items:center;
-    min-height:70vh;
+    min-height:75vh;
 }
 
 .small-title{
@@ -76,7 +85,7 @@ h1{
     font-size:22px;
     color:#475569;
     margin-bottom:35px;
-    max-width:650px;
+    max-width:680px;
 }
 
 .buttons a{
@@ -129,15 +138,61 @@ h1{
     font-size:14px;
 }
 
+.section{
+    margin-top:90px;
+}
+
+.section h2{
+    font-size:34px;
+    margin-bottom:25px;
+    color:#111827;
+}
+
+.card{
+    background:white;
+    padding:28px;
+    border-radius:22px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+    margin-bottom:20px;
+}
+
+ul{
+    padding-left:20px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+.pub{
+    margin-bottom:18px;
+    padding-bottom:18px;
+    border-bottom:1px solid #e2e8f0;
+}
+
+.pub:last-child{
+    border-bottom:none;
+}
+
+.two-col{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
 footer{
-    margin-top:70px;
+    margin-top:90px;
     padding-top:25px;
     border-top:1px solid #e2e8f0;
     color:#64748b;
     font-size:14px;
 }
 
-@media(max-width:850px){
+a{
+    color:#8a1538;
+}
+
+@media(max-width:900px){
 
 header{
     flex-direction:column;
@@ -154,8 +209,16 @@ nav a{
     grid-template-columns:1fr;
 }
 
+.two-col{
+    grid-template-columns:1fr;
+}
+
 h1{
     font-size:46px;
+}
+
+.subtitle{
+    font-size:20px;
 }
 }
 </style>
@@ -169,14 +232,15 @@ h1{
 <div class="logo">MATEO ARCILA OSORIO</div>
 
 <nav>
-<a href="#">About</a>
-<a href="#">Research</a>
-<a href="#">CV</a>
-<a href="#">Contact</a>
+<a href="#about">About</a>
+<a href="#research">Research</a>
+<a href="#publications">Publications</a>
+<a href="#cv">CV</a>
+<a href="#contact">Contact</a>
 </nav>
 </header>
 
-<section class="hero">
+<section class="hero" id="about">
 
 <div>
 <div class="small-title">PhD Researcher · Process Systems Engineering</div>
@@ -188,21 +252,138 @@ I work on the modeling and simulation of dynamical systems, applied mathematics,
 </p>
 
 <div class="buttons">
-<a href="#" class="btn-main">View CV</a>
-<a href="#" class="btn-secondary">Research</a>
+<a href="#cv" class="btn-main">View CV</a>
+<a href="#research" class="btn-secondary">Research</a>
 <a href="mailto:mateo.arcila@upc.edu" class="btn-secondary">Email</a>
 </div>
 </div>
 
 <div class="photo-box">
 <img src="profile.jpeg" alt="Mateo Arcila">
-<div class="caption">Replace profile.jpeg with your photo</div>
+<div class="caption">Barcelona, Spain</div>
 </div>
 
 </section>
 
+
+<section class="section" id="research">
+<h2>Research</h2>
+
+<div class="card">
+<p>
+Doctoral candidate at :contentReference[oaicite:0]{index=0} working on nonlinear systems modeling, optimization, predictive control, and machine learning for sustainable energy systems.
+</p>
+
+<br>
+
+<p>
+Current applications include catalytic membrane reactors, ethanol and methanol steam reforming, hydrogen production systems, and scalable real-time control algorithms.
+</p>
+</div>
+</section>
+
+
+<section class="section" id="publications">
+<h2>Selected Publications</h2>
+
+<div class="card">
+
+<div class="pub">
+<b>A phenomenological-based dynamic model of ethanol steam reforming for hydrogen production</b><br>
+International Journal of Hydrogen Energy (2026)
+</div>
+
+<div class="pub">
+<b>A benchmark simulator for advanced control of ethanol steam reforming</b><br>
+Renewable Energy (2025)
+</div>
+
+<div class="pub">
+<b>Nonlinear Dynamic Modeling and Control of Ethanol Steam Reforming for Hydrogen Production</b><br>
+IFAC-PapersOnLine (2025)
+</div>
+
+<div class="pub">
+<b>Optimization-based control of methanol steam reforming for hydrogen production in a catalytic membrane reactor</b><br>
+IFAC World Congress (2026)
+</div>
+
+<div class="pub">
+<b>Physics-informed Koopman-based Model Reduction for Real-time Optimization-based Control of Ethanol Steam Reforming</b><br>
+CDC 2026 (Under Review)
+</div>
+
+</div>
+</section>
+
+
+<section class="section" id="cv">
+<h2>Curriculum Vitae</h2>
+
+<div class="two-col">
+
+<div class="card">
+<h3>Education</h3>
+<br>
+<p><b>Ph.D. in Automatic Control</b><br>
+UPC BarcelonaTech<br>
+2024 – Present</p>
+
+<br>
+
+<p><b>B.Sc. Chemical Engineering</b><br>
+Universidad Nacional de Colombia<br>
+2017 – 2023</p>
+</div>
+
+<div class="card">
+<h3>Languages</h3>
+<br>
+<p>Spanish (Native)</p>
+<p>English (Full Professional Proficiency)</p>
+<p>Catalan (Intermediate)</p>
+<p>Italian (Beginner)</p>
+</div>
+
+<div class="card">
+<h3>Research Projects</h3>
+<br>
+<ul>
+<li>MARCH (IRI-CSIC, MIT, Pisa, TU Dortmund)</li>
+<li>ProGEMS</li>
+<li>SEAMLESS</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Professional Experience</h3>
+<br>
+<ul>
+<li>Doctoral Researcher – UPC</li>
+<li>R&D Trainee – Colcafé</li>
+<li>Teaching Assistant – Process Control Lab</li>
+<li>Mathematics Tutor</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+
+<section class="section" id="contact">
+<h2>Contact</h2>
+
+<div class="card">
+<p>Email: <a href="mailto:mateo.arcila@upc.edu">mateo.arcila@upc.edu</a></p>
+<p>Google Scholar: add your link</p>
+<p>ORCID: add your link</p>
+<p>Location: Barcelona, Spain</p>
+</div>
+</section>
+
+
 <footer>
-© 2026 Mateo Arcila · Powered by GitHub Pages
+© 2026 Mateo Arcila Osorio · Powered by GitHub Pages
 </footer>
 
 </div>
