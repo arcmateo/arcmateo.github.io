@@ -322,6 +322,41 @@ height:90px;
 object-fit:contain;
 flex-shrink:0;
 }
+
+.tags{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+}
+
+.tag{
+display:inline-block;
+padding:10px 16px;
+border-radius:999px;
+background:#f1f5f9;
+color:#1e293b;
+font-weight:600;
+font-size:15px;
+border:1px solid #e2e8f0;
+}
+
+.tag:hover{
+border-color:#8a1538;
+color:#8a1538;
+transform:translateY(-2px);
+transition:0.2s ease;
+}
+
+body.dark-mode .tag{
+background:#0f172a;
+color:#e5e7eb;
+border-color:#334155;
+}
+
+body.dark-mode .tag:hover{
+border-color:#8a1538;
+color:#f8fafc;
+}
  
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -377,8 +412,22 @@ I am a PhD researcher in Automatic Control at Universitat Politècnica de Catalu
 <div class="card">
 
 <p>
-I work on the modeling and simulation of dynamical systems, applied mathematics, state estimation, optimization-based control, machine learning, hydrogen production, and sustainable chemical and energy systems.
+My research interests include:
 </p>
+
+<br>
+
+<div class="tags">
+<span class="tag">Dynamical Systems</span>
+<span class="tag">Modeling & Simulation</span>
+<span class="tag">Applied Mathematics</span>
+<span class="tag">State Estimation</span>
+<span class="tag">Optimization-Based Control</span>
+<span class="tag">Machine Learning</span>
+<span class="tag">Hydrogen Production</span>
+<span class="tag">Sustainable Chemical Systems</span>
+<span class="tag">Sustainable Energy Systems</span>
+</div>
 
 </div>
 </section>
