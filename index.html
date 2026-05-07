@@ -191,19 +191,6 @@ border-bottom:none;
 margin-bottom:0;
 padding-bottom:0;
 }
-
-.two-col{
-columns:2 320px;
-column-gap:25px;
-}
-
-.two-col .card{
-display:inline-block;
-width:100%;
-margin-bottom:25px;
-break-inside:avoid;
-}
-
  
 footer{
 margin-top:90px;
@@ -427,6 +414,28 @@ body.dark-mode .timeline-content{
 color:#e5e7eb;
 }
  
+
+.two-col{
+column-count:2;
+column-gap:25px;
+}
+
+.two-col .card{
+display:block;
+width:100%;
+margin-bottom:25px;
+break-inside:avoid;
+page-break-inside:avoid;
+}
+
+@media(max-width:900px){
+.two-col{
+column-count:1;
+}
+}
+
+
+
  
 
  
