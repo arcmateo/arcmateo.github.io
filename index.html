@@ -193,9 +193,23 @@ padding-bottom:0;
 }
 
 .two-col{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:25px;
+columns:2 320px;
+column-gap:25px;
+}
+
+.two-col .card{
+display:inline-block;
+width:100%;
+margin-bottom:25px;
+break-inside:avoid;
+}
+
+@media(max-width:900px){
+
+.two-col{
+columns:1;
+}
+
 }
 
 footer{
