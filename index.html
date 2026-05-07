@@ -367,6 +367,64 @@ grid-template-columns:1fr 1fr;
 gap:25px;
 align-items:start;
 }
+
+
+.timeline{
+position:relative;
+padding-left:22px;
+}
+
+.timeline::before{
+content:"";
+position:absolute;
+left:6px;
+top:0;
+width:2px;
+height:100%;
+background:#cbd5e1;
+}
+
+.timeline-item{
+position:relative;
+margin-bottom:28px;
+}
+
+.timeline-item:last-child{
+margin-bottom:0;
+}
+
+.timeline-item::before{
+content:"";
+position:absolute;
+left:-21px;
+top:6px;
+width:12px;
+height:12px;
+border-radius:50%;
+background:#8a1538;
+}
+
+.timeline-date{
+font-size:13px;
+font-weight:bold;
+color:#8a1538;
+margin-bottom:4px;
+}
+
+.timeline-content{
+color:#1e293b;
+}
+
+body.dark-mode .timeline::before{
+background:#475569;
+}
+
+body.dark-mode .timeline-content{
+color:#e5e7eb;
+}
+ 
+ 
+
  
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -544,12 +602,51 @@ Universidad Nacional de Colombia (UNAL)<br>
 
 <div class="card">
 <h3>Professional Experience</h3><br>
-<ul>
-<li>Doctoral Researcher – UPC (Jun 2024 - Present) </li>
-<li>R&D Trainee – Nutresa, Colombia (Feb 2023 - Aug 2023) </li>
-<li>Teaching Assistant - UNAL  (Apr 2022 - Dec 2022)</li>
-<li>Mathematics Tutor - UNAL (Aug 2020 - Feb 2022)</li>
-</ul>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<div class="timeline-date">2026</div>
+<div class="timeline-content">
+<b>Visiting Researcher</b><br>
+Massachusetts Institute of Technology (MIT)
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-date">2024 – Present</div>
+<div class="timeline-content">
+<b>Doctoral Researcher</b><br>
+UPC BarcelonaTech
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-date">2023</div>
+<div class="timeline-content">
+<b>R&D Trainee</b><br>
+Colcafé
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-date">2022</div>
+<div class="timeline-content">
+<b>Teaching Assistant</b><br>
+Process Control Laboratory
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-date">2020 – 2022</div>
+<div class="timeline-content">
+<b>Mathematics Tutor</b><br>
+Universidad Nacional de Colombia
+</div>
+</div>
+
+</div>
+
 </div>
  
 <div class="card">
